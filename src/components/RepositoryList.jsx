@@ -10,7 +10,7 @@ export default function RepositoryList() {
         ItemSeparatorComponent={() => <Text></Text>}
         renderItem={({item: repo}) => (
             
-                <View key={repo.id} style={{padding: 20, paddingBottom: 5, paddingTop: 5}}>
+                <View key={repo.id} style={{padding: 20, paddingBottom: 5, paddingTop: 5, backgroundColor: 'gray', borderRadius: 15, marginHorizontal: 10}}>
                     <Text style={{fontWeight: 'bold', marginBottom: 10}}>Fullname: {repo.fullName}</Text>
                     <Text>Description: {repo.description}</Text>
                     <Text>Language: {repo.language}</Text>
